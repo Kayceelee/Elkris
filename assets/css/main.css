@@ -15430,6 +15430,18 @@ fieldset:disabled a.btn {
     -webkit-box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
     box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
 }
+.btn-elkris {
+  color: #ffffff;
+  background-color: #25791a;
+  border-color: #25791a;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
+          box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
+}
+.btn-elkris:hover {
+  color: #ffffff;
+  background-color: #c02d2d;
+  border-color: #c02d2d;
+}
 
 
 /* line 13, src/assets/scss/bootstrap/mixins/_hover.scss */
@@ -24947,6 +24959,983 @@ a.close.disabled {
     content: "";
 }
 
+<<<<<<< HEAD
+=======
+@media (min-width: 992px) {
+  /* line 232, src/assets/scss/bootstrap/_modal.scss */
+  .modal-lg,
+  .modal-xl {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 239, src/assets/scss/bootstrap/_modal.scss */
+  .modal-xl {
+    max-width: 1140px;
+  }
+}
+
+/* line 2, src/assets/scss/bootstrap/_tooltip.scss */
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+  opacity: 0;
+}
+
+/* line 15, src/assets/scss/bootstrap/_tooltip.scss */
+.tooltip.show {
+  opacity: 0.9;
+}
+
+/* line 17, src/assets/scss/bootstrap/_tooltip.scss */
+.tooltip .arrow {
+  position: absolute;
+  display: block;
+  width: 0.8rem;
+  height: 0.4rem;
+}
+
+/* line 23, src/assets/scss/bootstrap/_tooltip.scss */
+.tooltip .arrow::before {
+  position: absolute;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 32, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-top, .bs-tooltip-auto[x-placement^="top"] {
+  padding: 0.4rem 0;
+}
+
+/* line 35, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-top .arrow, .bs-tooltip-auto[x-placement^="top"] .arrow {
+  bottom: 0;
+}
+
+/* line 38, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  top: 0;
+  border-width: 0.4rem 0.4rem 0;
+  border-top-color: #ffffff;
+}
+
+/* line 46, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-right, .bs-tooltip-auto[x-placement^="right"] {
+  padding: 0 0.4rem;
+}
+
+/* line 49, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-right .arrow, .bs-tooltip-auto[x-placement^="right"] .arrow {
+  left: 0;
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+/* line 54, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  right: 0;
+  border-width: 0.4rem 0.4rem 0.4rem 0;
+  border-right-color: #ffffff;
+}
+
+/* line 62, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-bottom, .bs-tooltip-auto[x-placement^="bottom"] {
+  padding: 0.4rem 0;
+}
+
+/* line 65, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-bottom .arrow, .bs-tooltip-auto[x-placement^="bottom"] .arrow {
+  top: 0;
+}
+
+/* line 68, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  bottom: 0;
+  border-width: 0 0.4rem 0.4rem;
+  border-bottom-color: #ffffff;
+}
+
+/* line 76, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-left, .bs-tooltip-auto[x-placement^="left"] {
+  padding: 0 0.4rem;
+}
+
+/* line 79, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-left .arrow, .bs-tooltip-auto[x-placement^="left"] .arrow {
+  right: 0;
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+/* line 84, src/assets/scss/bootstrap/_tooltip.scss */
+.bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  left: 0;
+  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-left-color: #ffffff;
+}
+
+/* line 108, src/assets/scss/bootstrap/_tooltip.scss */
+.tooltip-inner {
+  max-width: 200px;
+  padding: 0.25rem 0.5rem;
+  color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+}
+
+/* line 1, src/assets/scss/bootstrap/_popover.scss */
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: block;
+  max-width: 276px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0.5rem 2rem 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 20, src/assets/scss/bootstrap/_popover.scss */
+.popover .arrow {
+  position: absolute;
+  display: block;
+  width: 1.5rem;
+  height: 0.75rem;
+  margin: 0 0.3rem;
+}
+
+/* line 27, src/assets/scss/bootstrap/_popover.scss */
+.popover .arrow::before, .popover .arrow::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 38, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-top, .bs-popover-auto[x-placement^="top"] {
+  margin-bottom: 0.75rem;
+}
+
+/* line 41, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-top > .arrow, .bs-popover-auto[x-placement^="top"] > .arrow {
+  bottom: calc(-0.75rem - 1px);
+}
+
+/* line 44, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-top > .arrow::before, .bs-popover-auto[x-placement^="top"] > .arrow::before {
+  bottom: 0;
+  border-width: 0.75rem 0.75rem 0;
+  border-top-color: transparent;
+}
+
+/* line 50, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-top > .arrow::after, .bs-popover-auto[x-placement^="top"] > .arrow::after {
+  bottom: 1px;
+  border-width: 0.75rem 0.75rem 0;
+  border-top-color: #ffffff;
+}
+
+/* line 58, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-right, .bs-popover-auto[x-placement^="right"] {
+  margin-left: 0.75rem;
+}
+
+/* line 61, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-right > .arrow, .bs-popover-auto[x-placement^="right"] > .arrow {
+  left: calc(-0.75rem - 1px);
+  width: 0.75rem;
+  height: 1.5rem;
+  margin: 0.3rem 0;
+}
+
+/* line 67, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-right > .arrow::before, .bs-popover-auto[x-placement^="right"] > .arrow::before {
+  left: 0;
+  border-width: 0.75rem 0.75rem 0.75rem 0;
+  border-right-color: transparent;
+}
+
+/* line 73, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
+  left: 1px;
+  border-width: 0.75rem 0.75rem 0.75rem 0;
+  border-right-color: #ffffff;
+}
+
+/* line 81, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-bottom, .bs-popover-auto[x-placement^="bottom"] {
+  margin-top: 0.75rem;
+}
+
+/* line 84, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-bottom > .arrow, .bs-popover-auto[x-placement^="bottom"] > .arrow {
+  top: calc(-0.75rem - 1px);
+}
+
+/* line 87, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-bottom > .arrow::before, .bs-popover-auto[x-placement^="bottom"] > .arrow::before {
+  top: 0;
+  border-width: 0 0.75rem 0.75rem 0.75rem;
+  border-bottom-color: transparent;
+}
+
+/* line 93, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-bottom > .arrow::after, .bs-popover-auto[x-placement^="bottom"] > .arrow::after {
+  top: 1px;
+  border-width: 0 0.75rem 0.75rem 0.75rem;
+  border-bottom-color: #ffffff;
+}
+
+/* line 101, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 1.5rem;
+  margin-left: -0.75rem;
+  content: "";
+  border-bottom: 1px solid #ffffff;
+}
+
+/* line 113, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-left, .bs-popover-auto[x-placement^="left"] {
+  margin-right: 0.75rem;
+}
+
+/* line 116, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-left > .arrow, .bs-popover-auto[x-placement^="left"] > .arrow {
+  right: calc(-0.75rem - 1px);
+  width: 0.75rem;
+  height: 1.5rem;
+  margin: 0.3rem 0;
+}
+
+/* line 122, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-left > .arrow::before, .bs-popover-auto[x-placement^="left"] > .arrow::before {
+  right: 0;
+  border-width: 0.75rem 0 0.75rem 0.75rem;
+  border-left-color: transparent;
+}
+
+/* line 128, src/assets/scss/bootstrap/_popover.scss */
+.bs-popover-left > .arrow::after, .bs-popover-auto[x-placement^="left"] > .arrow::after {
+  right: 1px;
+  border-width: 0.75rem 0 0.75rem 0.75rem;
+  border-left-color: #ffffff;
+}
+
+/* line 153, src/assets/scss/bootstrap/_popover.scss */
+.popover-header {
+  padding: 0.75rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+
+/* line 162, src/assets/scss/bootstrap/_popover.scss */
+.popover-header:empty {
+  display: none;
+}
+
+/* line 167, src/assets/scss/bootstrap/_popover.scss */
+.popover-body {
+  padding: 0.75rem 0.75rem;
+  color: #707070;
+}
+
+/* line 14, src/assets/scss/bootstrap/_carousel.scss */
+.carousel {
+  position: relative;
+}
+
+/* line 18, src/assets/scss/bootstrap/_carousel.scss */
+.carousel.pointer-event {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+/* line 22, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 2, src/assets/scss/bootstrap/mixins/_clearfix.scss */
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/* line 29, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 29, src/assets/scss/bootstrap/_carousel.scss */
+  .carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+/* line 39, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+/* line 45, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-item-next:not(.carousel-item-left),
+.active.carousel-item-right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+/* line 50, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+/* line 61, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transform: none;
+          transform: none;
+}
+
+/* line 67, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* line 74, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0s 0.6s;
+  transition: opacity 0s 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 74, src/assets/scss/bootstrap/_carousel.scss */
+  .carousel-fade .active.carousel-item-left,
+  .carousel-fade .active.carousel-item-right {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+/* line 87, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 15%;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 87, src/assets/scss/bootstrap/_carousel.scss */
+  .carousel-control-prev,
+  .carousel-control-next {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+/* line 111, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-control-prev {
+  left: 0;
+}
+
+/* line 117, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-control-next {
+  right: 0;
+}
+
+/* line 125, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 50% / 100% 100%;
+}
+
+/* line 132, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+
+/* line 135, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+/* line 145, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+/* line 159, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-indicators li {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* line 159, src/assets/scss/bootstrap/_carousel.scss */
+  .carousel-indicators li {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+/* line 177, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* line 187, src/assets/scss/bootstrap/_carousel.scss */
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@-webkit-keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* line 9, src/assets/scss/bootstrap/_spinners.scss */
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border .75s linear infinite;
+          animation: spinner-border .75s linear infinite;
+}
+
+/* line 21, src/assets/scss/bootstrap/_spinners.scss */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em;
+}
+
+@-webkit-keyframes spinner-grow {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes spinner-grow {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+/* line 41, src/assets/scss/bootstrap/_spinners.scss */
+.spinner-grow {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  background-color: currentColor;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: spinner-grow .75s linear infinite;
+          animation: spinner-grow .75s linear infinite;
+}
+
+/* line 53, src/assets/scss/bootstrap/_spinners.scss */
+.spinner-grow-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* line 3, src/assets/scss/bootstrap/utilities/_align.scss */
+.align-baseline {
+  vertical-align: baseline !important;
+}
+
+/* line 4, src/assets/scss/bootstrap/utilities/_align.scss */
+.align-top {
+  vertical-align: top !important;
+}
+
+/* line 5, src/assets/scss/bootstrap/utilities/_align.scss */
+.align-middle {
+  vertical-align: middle !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/utilities/_align.scss */
+.align-bottom {
+  vertical-align: bottom !important;
+}
+
+/* line 7, src/assets/scss/bootstrap/utilities/_align.scss */
+.align-text-bottom {
+  vertical-align: text-bottom !important;
+}
+
+/* line 8, src/assets/scss/bootstrap/utilities/_align.scss */
+.align-text-top {
+  vertical-align: text-top !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-primary {
+  background-color: #1A2C79 !important;
+}
+.bg-elkris {
+  background-color: #9aec52 !important;
+}
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #111d4f !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-secondary {
+  background-color: #e80566 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-secondary:hover, a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: #b60450 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-success {
+  background-color: #05A677 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-success:hover, a.bg-success:focus,
+button.bg-success:hover,
+button.bg-success:focus {
+  background-color: #047454 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-info {
+  background-color: #1E90FF !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-info:hover, a.bg-info:focus,
+button.bg-info:hover,
+button.bg-info:focus {
+  background-color: #0077ea !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-warning {
+  background-color: #f5b759 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-warning:hover, a.bg-warning:focus,
+button.bg-warning:hover,
+button.bg-warning:focus {
+  background-color: #f2a229 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-danger {
+  background-color: #FA5252 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-danger:hover, a.bg-danger:focus,
+button.bg-danger:hover,
+button.bg-danger:focus {
+  background-color: #f92020 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-light {
+  background-color: #D1D3E0 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #b3b6cb !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-dark {
+  background-color: #181C32 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #070910 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-default {
+  background-color: #0648B3 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-default:hover, a.bg-default:focus,
+button.bg-default:hover,
+button.bg-default:focus {
+  background-color: #043482 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-tertiary {
+  background-color: #ffbd48 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-tertiary:hover, a.bg-tertiary:focus,
+button.bg-tertiary:hover,
+button.bg-tertiary:focus {
+  background-color: #ffab15 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-quaternary {
+  background-color: #fbf6f0 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-quaternary:hover, a.bg-quaternary:focus,
+button.bg-quaternary:hover,
+button.bg-quaternary:focus {
+  background-color: #f0dec8 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-white:hover, a.bg-white:focus,
+button.bg-white:hover,
+button.bg-white:focus {
+  background-color: #e6e6e6 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-gray {
+  background-color: #181C32 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-gray:hover, a.bg-gray:focus,
+button.bg-gray:hover,
+button.bg-gray:focus {
+  background-color: #070910 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-neutral {
+  background-color: #ffffff !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-neutral:hover, a.bg-neutral:focus,
+button.bg-neutral:hover,
+button.bg-neutral:focus {
+  background-color: #e6e6e6 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-soft {
+  background-color: #f5f5f5 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-soft:hover, a.bg-soft:focus,
+button.bg-soft:hover,
+button.bg-soft:focus {
+  background-color: gainsboro !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-black {
+  background-color: #000000 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-black:hover, a.bg-black:focus,
+button.bg-black:hover,
+button.bg-black:focus {
+  background-color: black !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-purple {
+  background-color: #8965e0 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-purple:hover, a.bg-purple:focus,
+button.bg-purple:hover,
+button.bg-purple:focus {
+  background-color: #683bd7 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-indigo {
+  background-color: #31316A !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-indigo:hover, a.bg-indigo:focus,
+button.bg-indigo:hover,
+button.bg-indigo:focus {
+  background-color: #212147 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-brown {
+  background-color: #b9a084 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-brown:hover, a.bg-brown:focus,
+button.bg-brown:hover,
+button.bg-brown:focus {
+  background-color: #a78763 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-blue {
+  background-color: #5e72e4 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-blue:hover, a.bg-blue:focus,
+button.bg-blue:hover,
+button.bg-blue:focus {
+  background-color: #324cdd !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-cyan {
+  background-color: #63b1bd !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-cyan:hover, a.bg-cyan:focus,
+button.bg-cyan:hover,
+button.bg-cyan:focus {
+  background-color: #469aa7 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-gray-100 {
+  background-color: #f5f5f5 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-gray-100:hover, a.bg-gray-100:focus,
+button.bg-gray-100:hover,
+button.bg-gray-100:focus {
+  background-color: gainsboro !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-gray-200 {
+  background-color: #EBEDF3 !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-gray-200:hover, a.bg-gray-200:focus,
+button.bg-gray-200:hover,
+button.bg-gray-200:focus {
+  background-color: #cbd0e0 !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-gray-300 {
+  background-color: #E4E6EF !important;
+}
+
+/* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
+a.bg-gray-300:hover, a.bg-gray-300:focus,
+button.bg-gray-300:hover,
+button.bg-gray-300:focus {
+  background-color: #c4c8dc !important;
+}
+
+/* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
+.bg-gray-400 {
+  background-color: #D1D3E0 !important;
+}
+>>>>>>> 36aa516bfb51136774997315972815a581c2b85a
 
 /* line 91, src/assets/scss/bootstrap/_modal.scss */
 
@@ -44796,9 +45785,14 @@ button.bg-gray-dark:focus {
 .bg-gradient-primary {
     background: linear-gradient(85deg, rgba(26, 44, 121, 0.8) 30%, rgba(232, 5, 102, 0.9) 100%) !important;
 }
+<<<<<<< HEAD
 
 .bg-gradient-elkris {
     background: linear-gradient(104deg, rgba(229, 25, 19, 0.8) 24%, rgba(6, 238, 0, 0.8) 93%) !important;
+=======
+.bg-gradient-elkris{
+  background: linear-gradient(104deg, rgba(229,25,19,0.8) 24%, rgba(6,238,0,0.8) 93%) !important; 
+>>>>>>> 36aa516bfb51136774997315972815a581c2b85a
 }
 
 
@@ -72203,7 +73197,11 @@ img.flex-fill {
 /* line 5, src/assets/scss/corporx/_header.scss */
 
 .navbar-theme-primary.affix {
+<<<<<<< HEAD
     background-color: green;
+=======
+  background-color: green;
+>>>>>>> 36aa516bfb51136774997315972815a581c2b85a
 }
 
 
