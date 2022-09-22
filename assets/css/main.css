@@ -15494,6 +15494,16 @@ fieldset:disabled a.btn {
     box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
 }
 
+.btn-secondary-elkris {
+    color: black;
+    background: #08600e;
+    /* background-color: rgb(238, 163, 163); */
+    border-color: lightgreen;
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
+    box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
+    font-weight: bold;
+}
+
 
 /* line 13, src/assets/scss/bootstrap/mixins/_hover.scss */
 
@@ -44787,6 +44797,10 @@ button.bg-gray-dark:focus {
     background: linear-gradient(85deg, rgba(26, 44, 121, 0.8) 30%, rgba(232, 5, 102, 0.9) 100%) !important;
 }
 
+.bg-gradient-elkris {
+    background: linear-gradient(104deg, rgba(229, 25, 19, 0.8) 24%, rgba(6, 238, 0, 0.8) 93%) !important;
+}
+
 
 /* line 15, src/assets/scss/mixins/_background-variant.scss */
 
@@ -52112,6 +52126,7 @@ button.section-gray-800:focus {
 
 .navbar-brand img {
     height: auto;
+    width: 95px;
 }
 
 
@@ -72188,8 +72203,13 @@ img.flex-fill {
 /* line 5, src/assets/scss/corporx/_header.scss */
 
 .navbar-theme-primary.affix {
-    background-color: #1A2C79;
+    background-color: green;
 }
+
+
+/* .navbar-theme-primary.affix-elkris {
+    background-color: green;
+} */
 
 
 /* line 5, src/assets/scss/corporx/_header.scss */
