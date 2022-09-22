@@ -11555,6 +11555,18 @@ fieldset:disabled a.btn {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
           box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
 }
+.btn-elkris {
+  color: #ffffff;
+  background-color: #25791a;
+  border-color: #25791a;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
+          box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
+}
+.btn-elkris:hover {
+  color: #ffffff;
+  background-color: #c02d2d;
+  border-color: #c02d2d;
+}
 
 /* line 13, src/assets/scss/bootstrap/mixins/_hover.scss */
 .btn-primary:hover {
@@ -19649,7 +19661,9 @@ a.close.disabled {
 .bg-primary {
   background-color: #1A2C79 !important;
 }
-
+.bg-elkris {
+  background-color: #9aec52 !important;
+}
 /* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
