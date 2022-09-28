@@ -11381,6 +11381,7 @@ h6,
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.3;
+    animation: shark .10s infinte;
 }
 
 @media (max-width: 1200px) {
@@ -73842,3 +73843,19 @@ button,
 
 
 /*# sourceMappingURL=main.css.map */
+.shake .display-2{
+    /* transition: all 400ms ease; */
+    animation: shark .10s infinite ;
+}
+
+@keyframes shark {
+    25%{
+        transform: translateX(10);
+    }
+    50%{
+        transform: translateX(-10);
+    }
+    75%{
+        transform: translateX(10);
+    }
+}
