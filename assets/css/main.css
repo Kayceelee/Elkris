@@ -373,6 +373,17 @@
     filter: none;
 }
 
+.select {
+    background: inherit;
+    border-style: none;
+}
+
+.select:disabled {
+    background: #ccc;
+    backdrop-filter: blur(3px);
+    border-radius: 4px;
+}
+
 
 /* line 4, node_modules/@fortawesome/fontawesome-free/scss/_stacked.scss */
 
@@ -11381,6 +11392,7 @@ h6,
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.3;
+    animation: shark .10s infinte;
 }
 
 @media (max-width: 1200px) {
@@ -11784,6 +11796,8 @@ pre code {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    animation: anits 4s;
+    transition: All 400ms ease;
 }
 
 
@@ -15502,11 +15516,17 @@ fieldset:disabled a.btn {
 
 .btn-secondary-elkris {
     /* color: #ffffff; */
-    border-color: #e80566;
+    border-style: none;
     -webkit-box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
     box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
     background: linear-gradient(to right, #e51913cc, #06ee00cc);
     transition: all 400ms ease;
+    color: #fff;
+}
+
+.num {
+    font-size: 12px;
+    color: #000;
 }
 
 
@@ -73294,7 +73314,7 @@ not all {
 /* line 40, src/assets/scss/corporx/_login-sign-up.scss */
 
 .login-signup-form .form-group .input-group.input-group-merge>.form-control {
-    text-indent: 35px;
+    text-indent: 50px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     height: calc(2.65em + .75rem + 2px);
@@ -73842,3 +73862,126 @@ button,
 
 
 /*# sourceMappingURL=main.css.map */
+
+.shake .display-2 {
+    /* transition: all 400ms ease; */
+    animation: shark .10s infinite;
+}
+
+@keyframes shark {
+    25% {
+        transform: translateX(10);
+    }
+    50% {
+        transform: translateX(-10);
+    }
+    75% {
+        transform: translateX(10);
+    }
+}
+
+button.faq-float {
+    position: fixed;
+    z-index: 999;
+    bottom: 5%;
+    left: 3%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-weight: 600;
+    background: #013801;
+    border-style: none;
+    color: #fff;
+}
+
+@keyframes ani {
+    25% {
+        border: 4px solid rgba(1, 56, 1, .7);
+        opacity: .3;
+    }
+    50% {
+        border: 8px solid rgba(1, 56, 1, .1);
+        opacity: .3;
+        filter: blur(10px);
+    }
+    75% {
+        border: 4px solid rgba(1, 56, 1, .7);
+        opacity: .3;
+        filter: blur(10px);
+    }
+}
+
+@keyframes anit {
+    25% {
+        border: 4px solid rgba(1, 56, 1, .4);
+        opacity: .5;
+    }
+    50% {
+        border: 8px solid rgba(1, 56, 1, .4);
+        opacity: .5;
+        filter: blur(10px);
+    }
+    75% {
+        border: 4px solid rgba(1, 56, 1, .4);
+        opacity: .5;
+        filter: blur(10px);
+    }
+}
+
+@keyframes anits {
+    25% {
+        transform: translateY(-100%);
+        opacity: .5;
+        filter: blur(3px);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    70% {
+        transform: translateY(2%);
+    }
+}
+
+.circle1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(1, 56, 1, .4);
+    position: absolute;
+    border-style: none;
+    outline: none;
+    color: #fff;
+    z-index: 10;
+    bottom: -5px;
+    left: -6px;
+    animation: infinite 3s anit;
+    transition: all 800ms ease;
+}
+
+.circle2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(1, 56, 1, .7);
+    position: absolute;
+    z-index: 10;
+    outline: none;
+    color: #fff;
+    border-style: none;
+    bottom: -10px;
+    left: -12px;
+    animation: infinite 2s ani;
+    transition: all 00ms ease;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}

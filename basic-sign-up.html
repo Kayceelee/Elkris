@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from corporx.themetags.com/basic-sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 22:47:56 GMT -->
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--favicon icon-->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
     <!--title-->
-    <title>Basic sign up -  Elkris BioHealth</title>
+    <title>Basic sign up - Elkris BioHealth</title>
 
     <!--build:css-->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -21,6 +18,7 @@
 </head>
 
 <body>
+
 
     <!--preloader start-->
     <div id="preloader">
@@ -39,14 +37,14 @@
             <div class="container position-relative">
                 <a class="navbar-brand mr-lg-3" href="index.html">
                     <img class="navbar-brand-dark" src="assets/img/logo.png" alt="menuimage">
-                    <img class="navbar-brand-light" src="assets/img/logo-color.png" alt="menuimage">
+                    <img class="navbar-brand-light" src="assets/img/logo.png" alt="menuimage">
                 </a>
                 <div class="navbar-collapse collapse" id="navbar-default-primary">
                     <div class="navbar-collapse-header">
                         <div class="row">
                             <div class="col-6 collapse-brand">
                                 <a href="#">
-                                    <img src="assets/img/logo-color.png" alt="menuimage">
+                                    <img src="assets/img/logo.png" alt="menuimage">
                                 </a>
                             </div>
                             <div class="col-6 collapse-close">
@@ -55,38 +53,28 @@
                         </div>
                     </div>
                     <ul class="navbar-nav navbar-nav-hover ml-auto">
-                       <li class="nav-item dropdown">
-                             <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <li class="nav-item dropdown">
+                            <a href="index.html" class="nav-link dropdown-toggle">
                                 <span class="nav-link-inner-text">Home</span>
-                                <!-- <i class="fas fa-angle-down nav-link-arrow ml-1"></i> -->
                             </a>
-                            <!-- <ul class="sub-menu dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html">Home Page 01</a></li>
-                                <li><a class="dropdown-item" href="index-2.html">Home Page 02</a></li>
-                                <li><a class="dropdown-item" href="index-3.html">Home Page 03</a></li>
-                                <li><a class="dropdown-item" href="index-4.html">Home Page 04</a></li>
-                                <li><a class="dropdown-item" href="index-5.html">Home Page 05</a></li>
-                                <li><a class="dropdown-item" href="index-6.html">Home Page 06</a></li>
-                                <li><a class="dropdown-item" href="index-7.html">Home Page 07</a></li>
-                                <li><a class="dropdown-item" href="index-8.html">Home Page 08 <span class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-9.html">Home Page 09 <span class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-10.html">Home Page 10 <span class="badge badge-danger ml-2">New</span></a></li>
-                            </ul> -->
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about-us.html">About Us</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
-                       
-                       <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
-                       
+
+
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="basic-login.html">Login</a></li>
                     </ul>
+
                 </div>
                 <div class="d-flex align-items-center">
                     <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +108,22 @@
                                     <p class="text-muted">Sign in to your account to continue.</p>
                                 </div>
                                 <!--sign up form-->
-                                <form class="login-signup-form" action="#">
+                                <form class="login-signup-form" action="#" id="signup-form">
+
+                                    <div class="form-group">
+                                        <!-- Label -->
+                                        <label class="font-weight-bold">
+                                            Referal link
+                                        </label>
+                                        <!-- Input group -->
+                                        <div class="input-group input-group-merge">
+                                            <div class="input-icon">
+                                                <i class="ti-link"></i>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Enter referral link" required>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group">
                                         <!-- Label -->
                                         <label class="font-weight-bold">
@@ -148,38 +151,59 @@
                                         </div>
                                     </div>
 
-                                    <!-- Password -->
-                                    <div class="form-group">
-                                        <!-- Label -->
-                                        <label class="font-weight-bold">
-                                            Password
-                                        </label>
-                                        <!-- Input group -->
-                                        <div class="input-group input-group-merge">
-                                            <div class="input-icon">
-                                                <i class="ti-lock"></i>
-                                            </div>
-                                            <input type="password" class="form-control" placeholder="Enter your password">
+
+                                    <div class="my-4 d-flex justify-content-between">
+                                        <div class="form-check square-check"> <label for=""> Country</label>
+                                            <select name="country" class="select" id="free">
+                                                <option value="NGN">Nigeria</option>
+                                                <option value="Kenya">Kenya</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-check square-check"> <label for=""> State</label>
+                                            <select name="country" class="select" id="ruse">
+                                                <option value="Lagos">Lagos</option>
+                                                <option value="Abia">Abia</option>
+                                            </select>
                                         </div>
                                     </div>
 
+                                    <div class="form-group">
+                                        <!-- Label -->
+                                        <label class="font-weight-bold">
+                                            Tel No.
+                                        </label>
+                                        <!-- Input group -->
+                                        <div class="input-group input-group-merge">
+                                            <div class="input-icon d-flex align-items-sm-center" style="height:44px; border-right: 1px solid #ccc; padding-right:10px;">
+                                                <i class="ti-mobile"></i>
+
+                                                <div class="num"> +234</div>
+                                            </div>
+                                            <input type="tel" class="form-control  pl-sm-4" required>
+                                        </div>
+                                    </div>
+
+
+
+
                                     <div class="my-4">
                                         <div class="form-check square-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="check-terms">
+                                            <input class="form-check-input" type="checkbox" value="" id="check-terms" >
                                             <label class="form-check-label" for="check-terms">
                                                 I agree to the <a href="#">terms and conditions</a>
                                             </label>
                                         </div>
                                     </div>
-
+                                    <div class="g-recaptcha" data-sitekey="6LdrlXIiAAAAAFSU4W7mJVSyCSQmIeZEH7noOsVn">
+                                    </div>
                                     <!-- Submit -->
-                                    <button class="btn btn-block btn-secondary-elkris border-radius mt-4 mb-3">
+                                    <button class="btn btn-block btn-secondary-elkris border-radius mt-4 mb-3" type="submit">
                                         Sign up
                                     </button>
                                 </form>
                             </div>
                             <div class="card-footer bg-soft text-center border-top px-md-5"><small>Already registered?</small>
-                                <a href="login.html" class="small"> Login</a>
+                                <a href="./basic-login.html" class="small"> Login</a>
                             </div>
                         </div>
                     </div>
@@ -197,7 +221,38 @@
     </button>
     <!--scroll bottom to top button end-->
     <!--build:js-->
+    <script>
+        const count_select = document.getElementById('free');
+        const state_select = document.getElementById('ruse');
+        const phone_code = document.querySelector('.num')
+
+        count_select.addEventListener('change', () => {
+            if (count_select.value == 'Kenya') {
+                state_select.disabled = true;
+                phone_code.textContent = '+254';
+            } else if (count_select.value == 'NGN') {
+                state_select.disabled = false;
+                phone_code.textContent = '+234';
+            }
+        })
+
+        // if (othes === true){
+        //     othes.addEventListener('click', () => {
+        //     saw.disabled = true;
+        // });
+        // }else
+
+
+        //   document.getElementById("mySelect").disabled = true;
+    </script>
+
+
+
+
+
+
     <script src="assets/js/vendors/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/recaptcha.js"></script>
     <script src="assets/js/vendors/popper.min.js"></script>
     <script src="assets/js/vendors/bootstrap.min.js"></script>
     <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
@@ -215,7 +270,5 @@
     <!--endbuild-->
 </body>
 
-
-<!-- Mirrored from corporx.themetags.com/basic-sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 22:47:56 GMT -->
 
 </html>
