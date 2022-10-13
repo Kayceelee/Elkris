@@ -11796,8 +11796,6 @@ pre code {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    animation: anits 4s;
-    transition: All 400ms ease;
 }
 
 
@@ -11810,6 +11808,8 @@ pre code {
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
+    animation: anits 4s;
+    transition: All 400ms ease;
 }
 
 
@@ -15527,6 +15527,40 @@ fieldset:disabled a.btn {
 .num {
     font-size: 12px;
     color: #000;
+}
+
+.drug_design {
+    padding: 30px;
+    height: 30vh;
+    background: linear-gradient(to right, #06ee00cc, #e51913cc);
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+}
+
+.drug_head {
+    width: 100%;
+    padding: 10px 2px;
+    background: linear-gradient(to right, #06ee00cc, #e51913cc);
+    text-align: center;
+    border-radius: 6px;
+    animation: 10s gradt infinite;
+    transition: animation 10000ms ease;
+}
+
+@keyframes gradt {
+    20% {
+        background: linear-gradient(to right, #e51913cc, #043e01cc);
+    }
+    40% {
+        background: linear-gradient(to left bottom, #024b00, #e51913cc);
+    }
+    60% {
+        background: linear-gradient(to right bottom, #06ee00cc, #e51913cc);
+    }
+    80% {
+        background: linear-gradient(to right, #06ee00cc, #e51913cc);
+    }
 }
 
 
