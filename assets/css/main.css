@@ -15531,7 +15531,7 @@ fieldset:disabled a.btn {
 
 .drug_design {
     padding: 30px;
-    height: 30vh;
+    min-height: 30vh;
     background: linear-gradient(to right, #06ee00cc, #e51913cc);
     display: grid;
     place-items: center;
@@ -74018,4 +74018,34 @@ button.faq-float {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+.form-controls .input {
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    height: 42px;
+    padding: 12px 25px;
+    width: 100%;
+}
+
+.form-controls .btn {
+    background-color: #312940;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    height: 42px;
+    padding: 12px 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.form-controls .input:focus,
+.form-controls .btn:focus {
+    outline: 0;
 }
