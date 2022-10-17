@@ -12,3 +12,8 @@ function sendEmail() {
         alert("mail sent successfully")
       });
   }
+
+  document.addEventListener('submit',function(){
+    document.querySelector('#btn_signin').disable = true;
+    document.querySelector('#btn_signin').style.background = 'grey';
+  })
