@@ -10,7 +10,7 @@
     <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
     <!--title-->
-    <title>Basic sign up - Elkris BioHealth</title>
+    <title>Sign up - Elkris BioHealth</title>
 
     <!--build:css-->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -92,9 +92,9 @@
         <section class="section section-lg section-header position-relative min-vh-100 flex-column d-flex justify-content-center" style="background: url('assets/img/slider-bg-1.svg')no-repeat center bottom / cover">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-md-7 col-lg-6">
+                    <div class="col-md-7 col-lg-6" >
                         <div class="hero-content-left text-white">
-                            <h2 class="display-3">Create Your COBPA<br>(Community BP Advocate)<br> Account</h2>
+                            <h2 class="display-3" style= "margin-top:-500px;">Create Your COBPA<br>(Community BP Advocate) Account</h2>
                             <p class="lead">
                                 Keep your face always toward the sunshine - and shadows will fall behind you.
                             </p>
@@ -105,7 +105,7 @@
                             <div class="card-body px-md-5 py-5">
                                 <div class="mb-5">
                                     <h4>Create your COBPA Account</h4>
-                                    <!-- <p class="text-muted">Sign in to your account to continue.</p> -->
+                                    <!-- <p class="text-muted">Community BP Advocate Account</p> -->
                                 </div>
                                 <!--sign up form-->
                                 <form class="login-signup-form" action="#" id="signup-form">
@@ -160,8 +160,8 @@
                                             <div class="input-icon">
                                                 <i class="ti-package"></i>
                                             </div>
-                                            <select name="Registration_plan" class="form-control" id="reg_plan">
-                                                <option value="default">--Choose your COBPA Plan--</option>
+                                            <select name="Registration_plan" class="form-control" id="reg_plan" required>
+                                                <option value="">--Choose your COBPA Plan--</option>
                                                 <option value="CBEP">COBPA Basic Entry Plan (#15,500)</option>
                                                 <option value="CSEP">COBPA Star Entry Plan (#75,500)</option>
                                                 <option value="CEEP">COBPA Executive Entry Plan (#243,500)</option>
@@ -244,7 +244,7 @@
         const state_select = document.getElementById('ruse');
         const phone_code = document.querySelector('.num')
         const cobpareg = document.querySelector('#reg_plan')
-        const btn_signup = document.querySelector('#signup_btn')
+        const sign_up = document.querySelector('#signup-form');
         count_select.addEventListener('change', () => {
             if (count_select.value == 'Kenya') {
                 state_select.disabled = true;
@@ -254,13 +254,7 @@
                 phone_code.textContent = '+234';
             }
         })
-        btn_signup.addEventListener('click',(evt)=>{
-            if(cobpareg.value==='default'){
-                alert('please select a COBPA plan to continue');
-                evt.preventDefault();
-                return false;
-            }
-        })
+       
 
         // if (othes === true){
         //     othes.addEventListener('click', () => {
