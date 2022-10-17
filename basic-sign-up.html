@@ -94,7 +94,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-7 col-lg-6">
                         <div class="hero-content-left text-white">
-                            <h1 class="display-2">Create Your Account</h1>
+                            <h2 class="display-3">Create Your COBPA<br>(Community BP Advocate)<br> Account</h2>
                             <p class="lead">
                                 Keep your face always toward the sunshine - and shadows will fall behind you.
                             </p>
@@ -104,8 +104,8 @@
                         <div class="card login-signup-card shadow-lg mb-0">
                             <div class="card-body px-md-5 py-5">
                                 <div class="mb-5">
-                                    <h3>Create Account</h3>
-                                    <p class="text-muted">Sign in to your account to continue.</p>
+                                    <h4>Create your COBPA Account</h4>
+                                    <!-- <p class="text-muted">Sign in to your account to continue.</p> -->
                                 </div>
                                 <!--sign up form-->
                                 <form class="login-signup-form" action="#" id="signup-form">
@@ -215,7 +215,7 @@
                                     <div class="g-recaptcha" data-sitekey="6LdrlXIiAAAAAFSU4W7mJVSyCSQmIeZEH7noOsVn">
                                     </div>
                                     <!-- Submit -->
-                                    <button class="btn btn-block btn-secondary-elkris border-radius mt-4 mb-3" type="submit">
+                                    <button class="btn btn-block btn-secondary-elkris border-radius mt-4 mb-3" type="submit" id="signup_btn">
                                         Sign up
                                     </button>
                                 </form>
@@ -243,7 +243,8 @@
         const count_select = document.getElementById('free');
         const state_select = document.getElementById('ruse');
         const phone_code = document.querySelector('.num')
-
+        const cobpareg = document.querySelector('#reg_plan')
+        const btn_signup = document.querySelector('#signup_btn')
         count_select.addEventListener('change', () => {
             if (count_select.value == 'Kenya') {
                 state_select.disabled = true;
@@ -251,6 +252,13 @@
             } else if (count_select.value == 'NGN') {
                 state_select.disabled = false;
                 phone_code.textContent = '+234';
+            }
+        })
+        btn_signup.addEventListener('click',(evt)=>{
+            if(cobpareg.value==='default'){
+                alert('please select a COBPA plan to continue');
+                evt.preventDefault();
+                return false;
             }
         })
 
