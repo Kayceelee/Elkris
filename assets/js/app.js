@@ -1,25 +1,4 @@
-/*================
- Template Name: CorporX  Elkris BioHealth
- Description: All type of corporate business with marketing and agency template.
- Version: 1.0
- Author: https://themeforest.net/user/themetags
-=======================*/
-// TABLE OF CONTENTS
-// 1. preloader
-// 2. fixed navbar
-// 3. back to top
-// 4. magnify popup video
-// 5. magnify gallery popup
-// 6. hero background image with content slider
-// 7. custom counter js with scrolling
-// 8. client-testimonial one item carousel
-// 9. hero content one item carousel
-// 10. our clients logo carousel
-// 11. mixitup portfolio
-// 12. video background
-// 13. work process carousel
-// 14. gallery carousel
-// 15. wow js
+
 jQuery(function ($) {
 	"use strict"; // preloader
 
