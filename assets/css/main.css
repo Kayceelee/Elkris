@@ -15531,35 +15531,42 @@ fieldset:disabled a.btn {
 
 .drug_design {
     padding: 30px;
-    min-height: 30vh;
-    background: linear-gradient(to right, #06ee00cc, #e51913cc);
+    min-height: 50vh;
+    background: linear-gradient(to right, #008000, #06ee00cc, #008000);
     display: grid;
     place-items: center;
     border-radius: 6px;
+    min-width: 300px;
+    transform: rotate(-3deg);
+    transition: All 1000ms ease;
+}
+
+.drug_design:hover {
+    transform: rotate(0deg);
 }
 
 .drug_head {
     width: 100%;
     padding: 10px 2px;
-    background: linear-gradient(to right, #06ee00cc, #e51913cc);
+    background: linear-gradient(to right, #06ee00cc, #008000);
     text-align: center;
     border-radius: 6px;
     animation: 10s gradt infinite;
-    transition: animation 10000ms ease;
+    transition: animation 1000ms ease;
 }
 
 @keyframes gradt {
     20% {
-        background: linear-gradient(to right, #e51913cc, #043e01cc);
+        background: linear-gradient(to right, #008000, #043e01cc);
     }
     40% {
-        background: linear-gradient(to left bottom, #024b00, #e51913cc);
+        background: linear-gradient(to left bottom, #024b00, #03684b);
     }
     60% {
-        background: linear-gradient(to right bottom, #06ee00cc, #e51913cc);
+        background: linear-gradient(to right bottom, #06ee00cc, #008000);
     }
     80% {
-        background: linear-gradient(to right, #06ee00cc, #e51913cc);
+        background: linear-gradient(to right, #028f2fcc, #06ee00cc, #028f2fcc);
     }
 }
 
