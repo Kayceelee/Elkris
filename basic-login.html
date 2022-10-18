@@ -11,7 +11,7 @@
     <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
     <!--title-->
-    <title>Basic login - Corporate and Business HTML Template</title>
+    <title>Login Page- Elkris COBPA</title>
 
     <!--build:css-->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -112,14 +112,14 @@
                                 </div>
 
                                 <!--login form-->
-                                <form class="login-signup-form" action="#">
+                                <form class="login-signup-form" method="post" action="/?" id ='login-form'>
                                     <div class="form-group">
                                         <label class="font-weight-bold">Email Address</label>
                                         <div class="input-group input-group-merge">
                                             <div class="input-icon">
                                                 <i class="ti-email"></i>
                                             </div>
-                                            <input type="email" class="form-control" placeholder="name@yourdomain.com" required>
+                                            <input type="email" class="form-control email" placeholder="name@yourdomain.com" required>
                                         </div>
                                     </div>
                                     <!-- Password -->
@@ -129,7 +129,7 @@
                                                 <label class="font-weight-bold">Password</label>
                                             </div>
                                             <div class="col-auto">
-                                                <a href="forgot_password.html" class="form-text small text-muted">
+                                                <a href="password-reset.html" class="form-text small text-muted">
                                                     Forgot password?
                                                 </a>
                                             </div>
@@ -138,12 +138,12 @@
                                             <div class="input-icon">
                                                 <i class="ti-lock"></i>
                                             </div>
-                                            <input type="password" class="form-control" placeholder="Enter your password">
+                                            <input type="password" class="form-control password" placeholder="Enter your password">
                                         </div>
                                     </div>
 
                                     <!-- Submit -->
-                                    <button class="btn btn-block btn-secondary-elkris mt-4 mb-3">Sign in</button>
+                                    <button class="btn btn-block btn-secondary-elkris mt-4 mb-3" type="submit">Sign in</button>
 
                                 </form>
                             </div>
