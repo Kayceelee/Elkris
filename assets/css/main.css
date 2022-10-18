@@ -74049,3 +74049,104 @@ button.faq-float {
 .form-controls .btn:focus {
     outline: 0;
 }
+
+.referal_container {
+    width: 100%;
+    height: 100vh;
+}
+
+.referral .input {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 3px 10px #ccc;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+}
+
+.referral .input:hover,
+.referral .input:focus {
+    border: 2px solid #008000;
+}
+
+.referral .input i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #008000;
+}
+
+.referral .input input {
+    min-width: 100%;
+    padding: 10px 50px;
+    outline: none;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.referal_content {
+    padding: 200px;
+}
+
+@media (max-width: 500px) {
+    .referal_content {
+        padding: 20px;
+    }
+}
+
+.share_button button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    border-style: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 10px #ccc;
+}
+
+.share_button button:hover {
+    background: linear-gradient(to right, #008000, #0b4a0b);
+    color: #fff;
+}
+
+.social_referal {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 10PX;
+}
+
+.social_referal i {
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.177);
+    text-align: center;
+    display: flex;
+    color: #008000;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 10PX;
+    transition: All 1000ms ease;
+    transform-style: preserve-3d;
+    box-shadow: 2px 3px 10px #ccc;
+}
+
+.social_referal i:hover {
+    border-radius: 0px;
+    font-size: 23px;
+    transform: translateZ(100px) rotate(360deg);
+}
+
+.referral.link h1,
+.referral.link p {
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
