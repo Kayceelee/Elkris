@@ -11,7 +11,7 @@
     />
 
     <!--favicon icon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="assets/img/elk.png" type="image/png" sizes="16x32">
 
     <!--title-->
     <title>Referral - Elkris BioHealth</title>
@@ -63,20 +63,20 @@
 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About Us</a>
-                        </li>
-
-                        <li class="nav-item">
                             <a class="nav-link" href="referrals.html">Referral</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="review.html">Product Review</a>
                         </li>
-
-
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="basic-login.html">Login</a></li>
-                        <li class="nav-item"><a class="nav-link" href="basic-sign-up.html">SignUp</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sign-up.html">SignUp</a></li>
                     </ul>
 
                 </div>
@@ -213,7 +213,7 @@
 
         <!--testimonial section start-->
         <section class="section section-lg bg-soft ">
-            <div class="container " >
+            <div class="container ">
                 <div class="row justify-content-center ">
                     <div class="col-md-9 col-lg-8 ">
                         <div class="section-heading mb-5 text-center ">
@@ -352,8 +352,8 @@
                 <div class="row">
                     <div class="col p-3">
                         <div class="d-flex text-center justify-content-center align-items-center">
-                            <p class="copyright pb-0 mb-0">Copyrights © 2022. All rights reserved by
-                                <a href="http://www.codesprosolutions.net/" target="_blank">Codespro Solutions</a>
+                           <p class="copyright pb-0 mb-0">Copyrights © 2022. All rights reserved by
+                                <a href="/" target="_blank">Elkris Bio-Health</a>
                             </p>
                         </div>
                     </div>
@@ -376,15 +376,15 @@
     <!--scroll bottom to top button end-->
     <!--build:js-->
     <script>
-    const ref_btn =document.querySelector('#btn_ref');
+        const ref_btn = document.querySelector('#btn_ref');
         let ref = document.getElementById('ref_txt');
         console.log(ref.value);
-        ref_btn.addEventListener('click',()=>{
+        ref_btn.addEventListener('click', () => {
             ref.select();
             document.execCommand('copy');
-           ref_btn.insertAdjacentHTML('afterend','<p style="color:green">Referral Link Copied!!!</p>')
+            ref_btn.insertAdjacentHTML('afterend', '<p style="color:green;text-align: right;">Referral Link Copied!!!</p>')
         })
-        </script>
+    </script>
     <script src="assets/js/vendors/jquery-3.5.1.min.js "></script>
     <script src="assets/js/vendors/popper.min.js "></script>
     <script src="assets/js/vendors/bootstrap.min.js "></script>
