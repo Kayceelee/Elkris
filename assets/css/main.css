@@ -11530,7 +11530,7 @@ mark,
 
 .img-fluid {
     max-width: 100%;
-    height: auto;
+    height: 270px;
 }
 
 
@@ -11797,8 +11797,6 @@ pre code {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    animation: anits 4s;
-    transition: All 400ms ease;
 }
 
 
@@ -11811,6 +11809,8 @@ pre code {
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
+    animation: anits 4s;
+    transition: All 400ms ease;
 }
 
 
@@ -15528,6 +15528,108 @@ fieldset:disabled a.btn {
 .num {
     font-size: 12px;
     color: #000;
+}
+
+.drug_design {
+    padding: 30px;
+    min-height: 50vh;
+    background: linear-gradient(to right, #008000, #06ee00cc, #008000);
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    min-width: 300px;
+    transform: rotate(-3deg);
+    transition: All 1000ms ease;
+}
+
+.drug_design:hover {
+    transform: rotate(0deg);
+}
+
+@media (max-width:600px) {
+    .drug_design {
+        min-height: 22vh;
+    }
+}
+
+@media (min-width:1800px) {
+    .drug_design {
+        min-height: 22vh;
+    }
+}
+
+.drug_head {
+    width: 100%;
+    padding: 10px 2px;
+    background: linear-gradient(to right, #06ee00cc, #008000);
+    text-align: center;
+    border-radius: 6px;
+    animation: 10s gradt infinite;
+    transition: animation 1000ms ease;
+}
+
+.uppercase {
+    text-transform: capitalize;
+    text-align: left;
+    position: relative;
+    padding: 0 40px;
+    font-size: 25px;
+}
+
+.uppercase::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #008000;
+    left: 0;
+    top: 5px;
+    border-radius: 5px;
+}
+
+.its_p p {
+    text-align: justify;
+    padding: 0 50px;
+}
+
+.its_p i {
+    color: #008000;
+    position: absolute;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    animation: 4000ms movement infinite;
+    transition: All 1000ms ease;
+}
+
+@keyframes movement {
+    20% {
+        transform: translateX(10px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes gradt {
+    20% {
+        background: linear-gradient(to right, #008000, #043e01cc);
+    }
+    40% {
+        background: linear-gradient(to left bottom, #024b00, #03684b);
+    }
+    60% {
+        background: linear-gradient(to right bottom, #06ee00cc, #008000);
+    }
+    80% {
+        background: linear-gradient(to right, #028f2fcc, #06ee00cc, #028f2fcc);
+    }
 }
 
 
@@ -73985,4 +74087,173 @@ button.faq-float {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+.form-controls .input {
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    height: 42px;
+    padding: 12px 25px;
+    width: 100%;
+}
+
+.form-controls .btn {
+    background-color: #008000;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    height: 42px;
+    padding: 12px 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.form-controls .input:focus,
+.form-controls .btn:focus {
+    outline: 0;
+}
+
+.referal_container {
+    width: 100%;
+    height: 100vh;
+}
+
+.referral .input {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 3px 10px #ccc;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+}
+
+.referral .input:hover,
+.referral .input:focus {
+    border: 2px solid #008000;
+}
+
+.referral .input i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #008000;
+}
+
+.referral .input input {
+    min-width: 100%;
+    padding: 10px 50px;
+    outline: none;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.referal_content {
+    padding: 200px;
+}
+
+@media (max-width: 500px) {
+    .referal_content {
+        padding: 20px;
+    }
+}
+
+.share_button button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    border-style: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 10px #ccc;
+}
+
+.share_button button:hover {
+    background: linear-gradient(to right, #008000, #0b4a0b);
+    color: #fff;
+}
+
+.social_referal {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 10PX;
+}
+
+.social_referal i {
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.177);
+    text-align: center;
+    display: flex;
+    color: #008000;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 10PX;
+    transition: All 1000ms ease;
+    transform-style: preserve-3d;
+    box-shadow: 2px 3px 10px #ccc;
+}
+
+.social_referal i:hover {
+    border-radius: 0px;
+    font-size: 23px;
+    transform: translateZ(100px) rotate(360deg);
+}
+
+.referral.link h1,
+.referral.link p {
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.card_lenght_same {
+    min-height: 631px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.overflowy_scroll {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .its_p p {
+        text-align: left;
+        padding-left: 50px;
+        font-size: 14px;
+    }
+    .uppercase {
+        text-align: left;
+        font-size: 20px;
+    }
+    /* .its_p i {
+        color: #008000;
+        position: absolute;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        animation: 4000ms movement infinite;
+        transition: All 1000ms ease;
+    } */
 }
