@@ -15545,6 +15545,18 @@ fieldset:disabled a.btn {
     transform: rotate(0deg);
 }
 
+@media (max-width:600px) {
+    .drug_design {
+        min-height: 22vh;
+    }
+}
+
+@media (min-width:1800px) {
+    .drug_design {
+        min-height: 22vh;
+    }
+}
+
 .drug_head {
     width: 100%;
     padding: 10px 2px;
@@ -15553,6 +15565,55 @@ fieldset:disabled a.btn {
     border-radius: 6px;
     animation: 10s gradt infinite;
     transition: animation 1000ms ease;
+}
+
+.uppercase {
+    text-transform: capitalize;
+    text-align: left;
+    position: relative;
+    padding: 0 40px;
+    font-size: 25px;
+}
+
+.uppercase::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #008000;
+    left: 0;
+    top: 5px;
+    border-radius: 5px;
+}
+
+.its_p p {
+    text-align: justify;
+    padding: 0 50px;
+}
+
+.its_p i {
+    color: #008000;
+    position: absolute;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    animation: 4000ms movement infinite;
+    transition: All 1000ms ease;
+}
+
+@keyframes movement {
+    20% {
+        transform: translateX(10px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
 }
 
 @keyframes gradt {
@@ -74040,7 +74101,7 @@ button.faq-float {
 }
 
 .form-controls .btn {
-    background-color: #312940;
+    background-color: #008000;
     border: 0;
     border-radius: 50px;
     color: #fff;
@@ -74156,4 +74217,42 @@ button.faq-float {
     text-align: center;
     margin-bottom: 10px;
     text-transform: capitalize;
+}
+
+.card_lenght_same {
+    min-height: 631px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.overflowy_scroll {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .its_p p {
+        text-align: left;
+        padding-left: 50px;
+        font-size: 14px;
+    }
+    .uppercase {
+        text-align: left;
+        font-size: 20px;
+    }
+    /* .its_p i {
+        color: #008000;
+        position: absolute;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        animation: 4000ms movement infinite;
+        transition: All 1000ms ease;
+    } */
 }
