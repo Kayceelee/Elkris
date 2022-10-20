@@ -15533,7 +15533,22 @@ fieldset:disabled a.btn {
 .drug_design {
     padding: 30px;
     min-height: 50vh;
-    background: linear-gradient(to right, #008000, #06ee00cc, #008000);
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    min-width: 300px;
+    transition: All 1000ms ease;
+    animation: 20s drug infinite;
+}
+
+
+/* .drug_design:hover {
+    transform: rotate(0deg);
+} */
+
+.drug_design {
+    padding: 30px;
+    min-height: 50vh;
     display: grid;
     place-items: center;
     border-radius: 6px;
@@ -15544,6 +15559,79 @@ fieldset:disabled a.btn {
 
 .drug_design:hover {
     transform: rotate(0deg);
+}
+
+@media (max-width:600px) {
+    .drug_design {
+        min-height: 22vh;
+    }
+}
+
+@media (min-width:1800px) {
+    .drug_design {
+        min-height: 22vh;
+    }
+}
+
+.uppercase {
+    text-transform: capitalize;
+    text-align: left;
+    position: relative;
+    padding: 0 40px;
+    font-size: 25px;
+}
+
+.uppercase::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #008000;
+    left: 0;
+    top: 5px;
+    border-radius: 5px;
+}
+
+.its_p p {
+    text-align: justify;
+    padding: 0 50px;
+}
+
+.its_p i {
+    color: #008000;
+    position: absolute;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    animation: 4000ms movement infinite;
+    transition: All 1000ms ease;
+}
+
+@keyframes movement {
+    20% {
+        transform: translateX(10px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes drug {
+    20% {
+        transform: rotate(3deg)
+    }
+    50% {
+        transform: rotate(-3deg)
+    }
+    80% {
+        transform: rotate(3deg)
+    }
 }
 
 @media (max-width:600px) {
@@ -74256,4 +74344,45 @@ button.faq-float {
         animation: 4000ms movement infinite;
         transition: All 1000ms ease;
     } */
+}
+
+.reward_container {
+    width: 80px;
+    height: 80px;
+    box-shadow: 2px 3px 8px #ccc;
+    position: absolute;
+    background: #ff0000;
+    top: -50px;
+    right: -1%;
+    border-radius: 50%;
+    padding: 2px 6px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    animation: 5s shake infinite;
+    text-transform: uppercase;
+}
+
+.reward_container:hover {
+    scale: 1.04;
+    right: 10px;
+    color: #fff;
+    background: #080;
+}
+
+.reward_container h6 {
+    padding: 2px;
+}
+
+@keyframes shake {
+    20% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+    80% {
+        transform: translateY(2px);
+    }
 }
