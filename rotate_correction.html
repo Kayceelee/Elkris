@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+
+    <style>
+        body {
+            background: gray;
+            height: 100vh;
+        }
+        
+        .containers {
+            margin: 0px auto;
+            top: 150px;
+            width: 450px;
+            perspective: 900px;
+            position: relative;
+        }
+        
+        .frames {
+            width: 44px;
+            transform-style: preserve-3d;
+            transform: rotateX(-10deg) rotateY(30deg) rotateZ(0deg) translate3d(230px, 70px, 0px);
+        }
+        
+        .strip {
+            transform-style: preserve-3d;
+            animation: spin 20s infinite linear;
+        }
+        
+        .strip div {
+            position: absolute;
+            background: url(./assets/img/wrap-elkris.png);
+            border: solid #ccc;
+            border-width: thin 0;
+            height: 320px;
+            width: 60px;
+            opacity: 1;
+        }
+        
+        .strip div::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            bottom: -40px;
+            box-shadow: 0px 20px 40px 10px rgba(0, 0, 0, .3);
+        }
+        
+        .strip .s {
+            background-position: 913px;
+            transform: rotateY(0deg) translateZ(200px);
+        }
+        
+        @keyframes spin {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(-360);
+            }
+        }
+    </style>
+
+
+
+
+
+    <div class="containers">
+        <div class="frames">
+            <div class="strip">
+                <div class="s"></div>
+                <div class="s1"></div>
+                <div class="s2"></div>
+                <div class="s3"></div>
+                <div class="s4"></div>
+                <div class="s5"></div>
+                <div class="s6"></div>
+                <div class="s7"></div>
+                <div class="s8"></div>
+                <div class="s9"></div>
+                <div class="s10"></div>
+                <div class="s11"></div>
+                <div class="s12"></div>
+                <div class="s13"></div>
+                <div class="s14"></div>
+                <div class="s15"></div>
+                <div class="s16"></div>
+                <div class="s17"></div>
+                <div class="s18"></div>
+                <div class="s19"></div>
+                <div class="s20"></div>
+                <div class="s21"></div>
+                <div class="s22"></div>
+                <div class="s23"></div>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
