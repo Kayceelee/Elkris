@@ -13,8 +13,159 @@
 <body>
 
     <style>
+        /* ...............................1.................................... */
+        /* .containers1 {
+            margin: 0px auto;
+            top: 60%;
+            width: 450px;
+            perspective: -10px;
+            position: relative;
+        }
+        
+        #frames1 {
+            width: 44px;
+            transform-style: preserve-3d;
+            transform: rotateX(-20deg) rotateY(30deg) rotateZ(0deg) translate3d(230px, 70px, 10px);
+        }
+        
+        .strip1 {
+            transform-style: preserve-3d;
+            animation: spin 20s infinite linear;
+        }
+        
+        .strip1 div {
+            position: absolute;
+            background: linear-gradient(to right, #fff, #ccc);
+            border: solid #fff;
+            border-width: thin 0;
+            height: 70px;
+            width: 60px;
+            opacity: 1;
+        }
+        
+        .strip1 .s {
+            background-position: 1037px;
+            transform: rotateY(0deg) translateZ(200px);
+        }
+        
+        .strip1 .s1 {
+            background-position: 984px;
+            transform: rotateY(15deg) translateZ(200px);
+        }
+        
+        .strip1 .s2 {
+            background-position: 931px;
+            transform: rotateY(30deg) translateZ(200px);
+        }
+        
+        .strip1 .s3 {
+            background-position: 754px;
+            transform: rotateY(45deg) translateZ(200px);
+        }
+        
+        .strip1 .s4 {
+            background-position: 701px;
+            transform: rotateY(60deg) translateZ(200px);
+        }
+        
+        .strip1 .s5 {
+            background-position: 648px;
+            transform: rotateY(75deg) translateZ(200px);
+        }
+        
+        .strip1 .s6 {
+            background-position: 595px;
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        
+        .strip1 .s7 {
+            background-position: 542px;
+            transform: rotateY(105deg) translateZ(200px);
+        }
+        
+        .strip1 .s8 {
+            background-position: 490px;
+            transform: rotateY(120deg) translateZ(200px);
+        }
+        
+        .strip1 .s9 {
+            background-position: 437px;
+            transform: rotateY(135deg) translateZ(200px);
+        }
+        
+        .strip1 .s10 {
+            background-position: 384px;
+            transform: rotateY(150deg) translateZ(200px);
+        }
+        
+        .strip1 .s11 {
+            background-position: 331px;
+            transform: rotateY(165deg) translateZ(200px);
+        }
+        
+        .strip1 .s12 {
+            background-position: 278px;
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        
+        .strip1 .s13 {
+            background-position: 225px;
+            transform: rotateY(195deg) translateZ(200px);
+        }
+        
+        .strip1 .s14 {
+            background-position: 172px;
+            transform: rotateY(210deg) translateZ(200px);
+        }
+        
+        .strip1 .s15 {
+            background-position: 119px;
+            transform: rotateY(225deg) translateZ(200px);
+        }
+        
+        .strip1 .s16 {
+            background-position: 66px;
+            transform: rotateY(240deg) translateZ(200px);
+        }
+        
+        .strip1 .s17 {
+            background-position: 13px;
+            transform: rotateY(255deg) translateZ(200px);
+        }
+        
+        .strip1 .s18 {
+            background-position: -40px;
+            transform: rotateY(270deg) translateZ(200px);
+        }
+        
+        .strip1 .s19 {
+            background-position: -93px;
+            transform: rotateY(285deg) translateZ(200px);
+        }
+        
+        .strip1 .s20 {
+            background-position: -146px;
+            transform: rotateY(300deg) translateZ(200px);
+        }
+        
+        .strip1 .s21 {
+            background-position: -199px;
+            transform: rotateY(315deg) translateZ(200px);
+        }
+        
+        .strip1 .s22 {
+            background-position: -252px;
+            transform: rotateY(330deg) translateZ(200px);
+        }
+        
+        .strip1 .s23 {
+            background-position: -305px;
+            transform: rotateY(345deg) translateZ(200px);
+        } */
+        /* ...............................2..................................... */
+        
         body {
-            background: gray;
+            background: #fff;
             height: 100vh;
         }
         
@@ -26,21 +177,26 @@
             position: relative;
         }
         
-        .frames {
+        #frames {
             width: 44px;
             transform-style: preserve-3d;
-            transform: rotateX(0deg) rotateY(30deg) rotateZ(0deg) translate3d(230px, 70px, 0px);
+            transform: rotateX(15deg) rotateY(30deg) rotateZ(0deg) translate3d(230px, 70px, 10px);
         }
         
         .strip {
             transform-style: preserve-3d;
-            /* animation: spin 20s infinite linear; */
+            animation: spin 20s infinite linear;
+            transition: all 400ms ease;
+        }
+        
+        .strip:hover>.strip1:hover {
+            animation: spin .4s;
         }
         
         .strip div {
             position: absolute;
             background: url(./assets/img/wrap-elkris.png);
-            border: solid #ccc;
+            border: solid #fff;
             border-width: thin 0;
             height: 320px;
             width: 60px;
@@ -56,17 +212,17 @@
         }
         
         .strip .s {
-            background-position: 913px;
+            background-position: 1017px;
             transform: rotateY(0deg) translateZ(200px);
         }
         
         .strip .s1 {
-            background-position: 860px;
+            background-position: 984px;
             transform: rotateY(15deg) translateZ(200px);
         }
         
         .strip .s2 {
-            background-position: 807px;
+            background-position: 931px;
             transform: rotateY(30deg) translateZ(200px);
         }
         
@@ -96,88 +252,83 @@
         }
         
         .strip .s8 {
-            background-position: 489px;
+            background-position: 490px;
             transform: rotateY(120deg) translateZ(200px);
         }
         
         .strip .s9 {
-            background-position: 436px;
+            background-position: 437px;
             transform: rotateY(135deg) translateZ(200px);
         }
         
         .strip .s10 {
-            background-position: 383px;
+            background-position: 384px;
             transform: rotateY(150deg) translateZ(200px);
         }
         
         .strip .s11 {
-            background-position: 330px;
+            background-position: 331px;
             transform: rotateY(165deg) translateZ(200px);
         }
         
         .strip .s12 {
-            background-position: 277px;
+            background-position: 278px;
             transform: rotateY(180deg) translateZ(200px);
         }
         
         .strip .s13 {
-            background-position: 224px;
+            background-position: 225px;
             transform: rotateY(195deg) translateZ(200px);
         }
         
         .strip .s14 {
-            background-position: 171px;
+            background-position: 172px;
             transform: rotateY(210deg) translateZ(200px);
         }
         
         .strip .s15 {
-            background-position: 118px;
+            background-position: 119px;
             transform: rotateY(225deg) translateZ(200px);
         }
         
         .strip .s16 {
-            background-position: 65px;
+            background-position: 66px;
             transform: rotateY(240deg) translateZ(200px);
         }
         
         .strip .s17 {
-            background-position: 12px;
+            background-position: 13px;
             transform: rotateY(255deg) translateZ(200px);
         }
         
         .strip .s18 {
-            background-position: -41px;
+            background-position: -40px;
             transform: rotateY(270deg) translateZ(200px);
         }
         
         .strip .s19 {
-            background-position: -94px;
+            background-position: -93px;
             transform: rotateY(285deg) translateZ(200px);
         }
         
         .strip .s20 {
-            background-position: -147px;
+            background-position: -146px;
             transform: rotateY(300deg) translateZ(200px);
         }
         
         .strip .s21 {
-            background-position: -200px;
+            background-position: -199px;
             transform: rotateY(315deg) translateZ(200px);
         }
         
         .strip .s22 {
-            background-position: -253px;
+            background-position: -252px;
             transform: rotateY(330deg) translateZ(200px);
         }
         
         .strip .s23 {
-            background-position: -306px;
+            background-position: -305px;
             transform: rotateY(345deg) translateZ(200px);
-        }
-        
-        .strip .s23 {
-            background-position: -359px;
-            transform: rotateY(350deg) translateZ(200px);
         }
         
         @keyframes spin {
@@ -193,9 +344,43 @@
 
 
 
+    <div class="containers1">
+        <div id="frames1">
+
+
+            <div class="strip1">
+                <div class="s"></div>
+                <div class="s1"></div>
+                <div class="s2"></div>
+                <div class="s3"></div>
+                <div class="s4"></div>
+                <div class="s5"></div>
+                <div class="s6"></div>
+                <div class="s7"></div>
+                <div class="s8"></div>
+                <div class="s9"></div>
+                <div class="s10"></div>
+                <div class="s11"></div>
+                <div class="s12"></div>
+                <div class="s13"></div>
+                <div class="s14"></div>
+                <div class="s15"></div>
+                <div class="s16"></div>
+                <div class="s17"></div>
+                <div class="s18"></div>
+                <div class="s19"></div>
+                <div class="s20"></div>
+                <div class="s21"></div>
+                <div class="s22"></div>
+                <div class="s23"></div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="containers">
-        <div class="frames">
+        <div id="frames">
 
             <div class="cover">
                 <div class="c"></div>
@@ -231,9 +416,6 @@
                 <div class="s21"></div>
                 <div class="s22"></div>
                 <div class="s23"></div>
-
-
-
             </div>
         </div>
     </div>

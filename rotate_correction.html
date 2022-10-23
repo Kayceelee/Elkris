@@ -13,51 +13,153 @@
 <body>
 
     <style>
-        body {
-            background: gray;
-            height: 100vh;
-        }
-        
-        .containers {
+        .containers1 {
             margin: 0px auto;
             top: 150px;
             width: 450px;
-            perspective: 900px;
+            perspective: 200px;
             position: relative;
         }
         
-        .frames {
+        #frames1 {
             width: 44px;
             transform-style: preserve-3d;
-            transform: rotateX(-10deg) rotateY(30deg) rotateZ(0deg) translate3d(230px, 70px, 0px);
+            transform: rotateX(15deg) rotateY(30deg) rotateZ(0deg) translate3d(230px, 70px, 10px);
         }
         
-        .strip {
+        .strip1 {
             transform-style: preserve-3d;
             animation: spin 20s infinite linear;
         }
         
-        .strip div {
+        .strip1 div {
             position: absolute;
-            background: url(./assets/img/wrap-elkris.png);
-            border: solid #ccc;
+            background: linear-gradient(to right, #fff, #ccc);
+            border: solid #fff;
             border-width: thin 0;
-            height: 320px;
+            height: 20px;
             width: 60px;
             opacity: 1;
         }
         
-        .strip div::after {
-            content: '';
-            position: absolute;
-            width: 60px;
-            bottom: -40px;
-            box-shadow: 0px 20px 40px 10px rgba(0, 0, 0, .3);
+        .strip1 .s {
+            background-position: 1037px;
+            transform: rotateY(0deg) translateZ(200px);
         }
         
-        .strip .s {
-            background-position: 913px;
-            transform: rotateY(0deg) translateZ(200px);
+        .strip1 .s1 {
+            background-position: 984px;
+            transform: rotateY(15deg) translateZ(200px);
+        }
+        
+        .strip1 .s2 {
+            background-position: 931px;
+            transform: rotateY(30deg) translateZ(200px);
+        }
+        
+        .strip1 .s3 {
+            background-position: 754px;
+            transform: rotateY(45deg) translateZ(200px);
+        }
+        
+        .strip1 .s4 {
+            background-position: 701px;
+            transform: rotateY(60deg) translateZ(200px);
+        }
+        
+        .strip1 .s5 {
+            background-position: 648px;
+            transform: rotateY(75deg) translateZ(200px);
+        }
+        
+        .strip1 .s6 {
+            background-position: 595px;
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        
+        .strip1 .s7 {
+            background-position: 542px;
+            transform: rotateY(105deg) translateZ(200px);
+        }
+        
+        .strip1 .s8 {
+            background-position: 490px;
+            transform: rotateY(120deg) translateZ(200px);
+        }
+        
+        .strip1 .s9 {
+            background-position: 437px;
+            transform: rotateY(135deg) translateZ(200px);
+        }
+        
+        .strip1 .s10 {
+            background-position: 384px;
+            transform: rotateY(150deg) translateZ(200px);
+        }
+        
+        .strip1 .s11 {
+            background-position: 331px;
+            transform: rotateY(165deg) translateZ(200px);
+        }
+        
+        .strip1 .s12 {
+            background-position: 278px;
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        
+        .strip1 .s13 {
+            background-position: 225px;
+            transform: rotateY(195deg) translateZ(200px);
+        }
+        
+        .strip1 .s14 {
+            background-position: 172px;
+            transform: rotateY(210deg) translateZ(200px);
+        }
+        
+        .strip1 .s15 {
+            background-position: 119px;
+            transform: rotateY(225deg) translateZ(200px);
+        }
+        
+        .strip1 .s16 {
+            background-position: 66px;
+            transform: rotateY(240deg) translateZ(200px);
+        }
+        
+        .strip1 .s17 {
+            background-position: 13px;
+            transform: rotateY(255deg) translateZ(200px);
+        }
+        
+        .strip1 .s18 {
+            background-position: -40px;
+            transform: rotateY(270deg) translateZ(200px);
+        }
+        
+        .strip1 .s19 {
+            background-position: -93px;
+            transform: rotateY(285deg) translateZ(200px);
+        }
+        
+        .strip1 .s20 {
+            background-position: -146px;
+            transform: rotateY(300deg) translateZ(200px);
+        }
+        
+        .strip1 .s21 {
+            background-position: -199px;
+            transform: rotateY(315deg) translateZ(200px);
+        }
+        
+        .strip1 .s22 {
+            background-position: -252px;
+            transform: rotateY(330deg) translateZ(200px);
+        }
+        
+        .strip1 .s23 {
+            background-position: -305px;
+            transform: rotateY(345deg) translateZ(200px);
         }
         
         @keyframes spin {
@@ -65,7 +167,7 @@
                 transform: rotateY(0deg);
             }
             to {
-                transform: rotateY(-360);
+                transform: rotateY(-360deg);
             }
         }
     </style>
@@ -74,9 +176,11 @@
 
 
 
-    <div class="containers">
-        <div class="frames">
-            <div class="strip">
+    <div class="containers1">
+        <div id="frames1">
+
+
+            <div class="strip1">
                 <div class="s"></div>
                 <div class="s1"></div>
                 <div class="s2"></div>
@@ -101,9 +205,6 @@
                 <div class="s21"></div>
                 <div class="s22"></div>
                 <div class="s23"></div>
-
-
-
             </div>
         </div>
     </div>
