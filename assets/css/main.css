@@ -11529,7 +11529,7 @@ mark,
 /* line 8, src/assets/scss/bootstrap/_images.scss */
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 250px;
     height: 270px;
 }
 
@@ -20811,6 +20811,7 @@ input[type="button"].btn-block {
 .nav-link:hover,
 .nav-link:focus {
     text-decoration: none;
+    border-bottom: 0.0625rem solid #EBEDF3;
 }
 
 
@@ -74347,13 +74348,13 @@ button.faq-float {
 }
 
 .reward_container {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
     box-shadow: 2px 3px 8px #ccc;
     position: absolute;
     background: #ff0000;
-    top: -50px;
-    right: -1%;
+    top: -150px;
+    right: 2%;
     border-radius: 50%;
     padding: 2px 6px;
     display: grid;
@@ -74366,9 +74367,10 @@ button.faq-float {
 
 .reward_container:hover {
     scale: 1.04;
-    right: 10px;
+  /*  right: 10px;*/
     color: #fff;
     background: #080;
+    border: 3px solid #f1da1c;
 }
 
 .reward_container h6 {
