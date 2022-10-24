@@ -74367,7 +74367,7 @@ button.faq-float {
 
 .reward_container:hover {
     scale: 1.04;
-  /*  right: 10px;*/
+    /*  right: 10px;*/
     color: #fff;
     background: #080;
     border: 3px solid #f1da1c;
@@ -74386,5 +74386,185 @@ button.faq-float {
     }
     80% {
         transform: translateY(2px);
+    }
+}
+
+
+/* ---------------------------------cylinder_container----------------------------------- */
+
+.cylinder_container {
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+}
+
+.containers {
+    margin: 0px auto;
+    top: 150px;
+    width: 450px;
+    perspective: 900px;
+    position: relative;
+}
+
+#frames {
+    width: 44px;
+    transform-style: preserve-3d;
+    transform: rotateX(4deg) rotateY(30deg) rotateZ(0deg) translate3d(230px, 70px, 10px);
+}
+
+.strip {
+    transform-style: preserve-3d;
+    animation: spin 20s infinite linear;
+    transition: all 400ms ease;
+}
+
+.strip:hover>.strip1:hover {
+    animation: spin .4s;
+}
+
+.strip div {
+    position: absolute;
+    background: url(../img/wrap-elkris.png) green;
+    border: solid #fff;
+    border-width: thin 0;
+    height: 320px;
+    width: 60px;
+    opacity: 1;
+}
+
+.strip div::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    bottom: -40px;
+    box-shadow: 0px 20px 40px 10px rgba(0, 0, 0, .3);
+}
+
+.strip .s {
+    background-position: 1017px;
+    transform: rotateY(0deg) translateZ(200px);
+}
+
+.strip .s1 {
+    background-position: 984px;
+    transform: rotateY(15deg) translateZ(200px);
+}
+
+.strip .s2 {
+    background-position: 931px;
+    transform: rotateY(30deg) translateZ(200px);
+}
+
+.strip .s3 {
+    background-position: 754px;
+    transform: rotateY(45deg) translateZ(200px);
+}
+
+.strip .s4 {
+    background-position: 701px;
+    transform: rotateY(60deg) translateZ(200px);
+}
+
+.strip .s5 {
+    background-position: 648px;
+    transform: rotateY(75deg) translateZ(200px);
+}
+
+.strip .s6 {
+    background-position: 595px;
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.strip .s7 {
+    background-position: 542px;
+    transform: rotateY(105deg) translateZ(200px);
+}
+
+.strip .s8 {
+    background-position: 490px;
+    transform: rotateY(120deg) translateZ(200px);
+}
+
+.strip .s9 {
+    background-position: 437px;
+    transform: rotateY(135deg) translateZ(200px);
+}
+
+.strip .s10 {
+    background-position: 384px;
+    transform: rotateY(150deg) translateZ(200px);
+}
+
+.strip .s11 {
+    background-position: 331px;
+    transform: rotateY(165deg) translateZ(200px);
+}
+
+.strip .s12 {
+    background-position: 278px;
+    transform: rotateY(180deg) translateZ(200px);
+}
+
+.strip .s13 {
+    background-position: 225px;
+    transform: rotateY(195deg) translateZ(200px);
+}
+
+.strip .s14 {
+    background-position: 172px;
+    transform: rotateY(210deg) translateZ(200px);
+}
+
+.strip .s15 {
+    background-position: 119px;
+    transform: rotateY(225deg) translateZ(200px);
+}
+
+.strip .s16 {
+    background-position: 66px;
+    transform: rotateY(240deg) translateZ(200px);
+}
+
+.strip .s17 {
+    background-position: 13px;
+    transform: rotateY(255deg) translateZ(200px);
+}
+
+.strip .s18 {
+    background-position: -40px;
+    transform: rotateY(270deg) translateZ(200px);
+}
+
+.strip .s19 {
+    background-position: -93px;
+    transform: rotateY(285deg) translateZ(200px);
+}
+
+.strip .s20 {
+    background-position: -146px;
+    transform: rotateY(300deg) translateZ(200px);
+}
+
+.strip .s21 {
+    background-position: -199px;
+    transform: rotateY(315deg) translateZ(200px);
+}
+
+.strip .s22 {
+    background-position: -252px;
+    transform: rotateY(330deg) translateZ(200px);
+}
+
+.strip .s23 {
+    background-position: -305px;
+    transform: rotateY(345deg) translateZ(200px);
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
     }
 }
