@@ -15531,30 +15531,19 @@ fieldset:disabled a.btn {
 }
 
 .drug_design {
-    padding: 30px;
+    padding: 10px;
     min-height: 50vh;
     display: grid;
     place-items: center;
+    margin-top: -57px;
     border-radius: 6px;
     min-width: 300px;
     transition: All 1000ms ease;
     animation: 20s drug infinite;
 }
 
-
-/* .drug_design:hover {
-    transform: rotate(0deg);
-} */
-
-.drug_design {
-    padding: 30px;
-    min-height: 50vh;
-    display: grid;
-    place-items: center;
-    border-radius: 6px;
-    min-width: 300px;
-    transform: rotate(-3deg);
-    transition: All 1000ms ease;
+.drug_design img {
+    max-width: 300px;
 }
 
 .drug_design:hover {
@@ -15622,6 +15611,11 @@ fieldset:disabled a.btn {
     }
 }
 
+.split {
+    display: flex;
+    gap: 1rem;
+}
+
 @keyframes drug {
     20% {
         transform: rotate(3deg)
@@ -15643,6 +15637,15 @@ fieldset:disabled a.btn {
 @media (min-width:1800px) {
     .drug_design {
         min-height: 22vh;
+    }
+}
+
+@media (max-width:1040px) {
+    .el-d-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 40px;
     }
 }
 
@@ -74399,8 +74402,7 @@ button.faq-float {
 }
 
 .containers {
-    margin: 0px auto;
-    top: 150px;
+    padding: 30px;
     width: 450px;
     perspective: 900px;
     position: relative;
@@ -74425,7 +74427,7 @@ button.faq-float {
 .strip div {
     position: absolute;
     background: url(../img/wrap-elkris.png) green;
-    border: solid #fff;
+    border: solid green;
     border-width: thin 0;
     height: 320px;
     width: 60px;
@@ -74567,4 +74569,22 @@ button.faq-float {
     to {
         transform: rotateY(-360deg);
     }
+}
+
+.el-d-flex {
+    display: flex;
+}
+
+.break3,
+.break4 {
+    padding: 30px;
+}
+
+.break3 strong,
+.break4 strong {
+    padding: 10px;
+}
+
+.content-section h1 {
+    text-align: center;
 }
